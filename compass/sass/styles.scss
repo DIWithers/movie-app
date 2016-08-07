@@ -1,0 +1,81 @@
+//This is the main page for scss
+
+@import "configs/variables";
+@import "components/misc";
+@import "layout/header";
+@import "layout/footer";
+
+body {
+	width: 100%;
+	margin: 10px;
+	background-color: $mainBgColor;
+
+}
+h3 {
+	font-size: 30px;
+}
+
+body {
+	.header {
+		text-align: center;
+		font-size: 40px;
+		color: white;
+		background-color: black;
+	}
+	#search-bar {
+		width: 100%;
+		overflow: hidden;
+		text-align: center;
+		.button {
+			height: 45px;
+			width: 60px;
+			vertical-align: center;
+		}
+	}
+	#search-all {
+		width: 95%;
+		height: 40px;
+		text-align: center;
+		font-size: 30px;
+		vertical-align: bottom;
+		padding-left: 20px;
+	}
+	.container {
+		width: $width;
+		overflow: hidden;
+		margin: auto;
+		float: right;
+
+		&.after-header {  //class addition, not a child but a sibling of .container
+			padding-top: 35px;
+		}
+		.col {
+			width: getColumnWidth($width, $numColumns, $margin); //defined in variabled.scss
+			margin: auto $margin;
+			float: left;
+			@extend .base-font;
+			color: #000;
+			height: 490px;
+			padding: 10px;
+			text-align: center;
+
+		}
+
+	}
+}
+.poster-grid {
+	float: left;
+	font-size: 40px;
+	width: 100%;
+	
+	
+}
+.otherSearches {
+	height: 50%;
+	border: 1px solid black;
+	float: left;
+	display: block;
+	.button {
+		border-radius: 10px;
+	}
+}

@@ -1,0 +1,130 @@
+/**
+ * @file
+ * SMACSS Modules
+ *
+ * Adds modular sets of styles.
+ *
+ * Additional useful selectors can be found in Zen's online documentation.
+ * https://drupal.org/node/1707736
+ */
+/* line 40, ../compass/sass/components/_misc.scss */
+.base-font, body .container .col {
+  font-family: "source-serif-pro",Georgia,"Times New Roman",Times,serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ddd;
+}
+
+/* line 6, ../compass/sass/layout/_header.scss */
+#header {
+  width: 100%;
+  position: fixed;
+  background-color: red;
+  height: 30px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 12, ../compass/sass/layout/_header.scss */
+#header .circle {
+  border-radius: 20px;
+  background-color: #2383d1;
+  border: 3px solid #0000ff;
+  height: 30px;
+  width: 30px;
+}
+
+/* line 5, ../compass/sass/layout/_footer.scss */
+#footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  height: 30px;
+  background-color: blue;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* line 8, ../compass/sass/styles.scss */
+body {
+  width: 100%;
+  margin: 10px;
+  background-color: #2383d1;
+}
+
+/* line 14, ../compass/sass/styles.scss */
+h3 {
+  font-size: 30px;
+}
+
+/* line 19, ../compass/sass/styles.scss */
+body .header {
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  background-color: black;
+}
+/* line 25, ../compass/sass/styles.scss */
+body #search-bar {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+/* line 29, ../compass/sass/styles.scss */
+body #search-bar .button {
+  height: 45px;
+  width: 60px;
+  vertical-align: center;
+}
+/* line 35, ../compass/sass/styles.scss */
+body #search-all {
+  width: 95%;
+  height: 40px;
+  text-align: center;
+  font-size: 30px;
+  vertical-align: bottom;
+  padding-left: 20px;
+}
+/* line 43, ../compass/sass/styles.scss */
+body .container {
+  width: 1200px;
+  overflow: hidden;
+  margin: auto;
+  float: right;
+}
+/* line 49, ../compass/sass/styles.scss */
+body .container.after-header {
+  padding-top: 35px;
+}
+/* line 52, ../compass/sass/styles.scss */
+body .container .col {
+  width: 280px;
+  margin: auto 10px;
+  float: left;
+  color: #000;
+  height: 490px;
+  padding: 10px;
+  text-align: center;
+}
+
+/* line 66, ../compass/sass/styles.scss */
+.poster-grid {
+  float: left;
+  font-size: 40px;
+  width: 100%;
+}
+
+/* line 73, ../compass/sass/styles.scss */
+.otherSearches {
+  height: 50%;
+  border: 1px solid black;
+  float: left;
+  display: block;
+}
+/* line 78, ../compass/sass/styles.scss */
+.otherSearches .button {
+  border-radius: 10px;
+}
